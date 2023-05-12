@@ -1,0 +1,11 @@
+/Build
+Conf/.cache/.PlatformBuild
+Conf/.cache/build.db
+/Download/
+/Tools/
+/BaseTools/
+Tools/7zr.*
+Tools/*wget*
+Tools/EWDK_1703
+hello.obj
+hello.exe
