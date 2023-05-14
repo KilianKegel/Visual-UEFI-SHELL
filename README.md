@@ -13,6 +13,7 @@ Build **UEFI SHELL binary** from latest available [**EDK2**](https://github.com/
 The discontinuation was announced with https://edk2.groups.io/g/devel/topic/patch_shellbinpkg_remove/31209298?p=.
 
 ***Tianocore community*** promised to *"publish all Shell binaries to the according Assets part directly. edk2 release link: https://github.com/tianocore/edk2/releases"*
+
 Regrettably the latest available `ShellBinPkg` was published with  [edk2-stable202002](https://github.com/tianocore/edk2/releases?page=2) and is somehow out-dated.
 
 https://github.com/tianocore/edk2/blob/edk2-stable201903/ShellBinPkg/UefiShell/X64/Shell.efi provides access to the latest available **UEFI SHELL binary** direct access,
