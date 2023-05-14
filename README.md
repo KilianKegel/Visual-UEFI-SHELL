@@ -39,7 +39,7 @@ In a future extension setup a true **Visual Studio VS2022** project to build
 The above tool set is automatically downloaded, extracted and setup during **LAUNCH.BAT** project start.
 
 To speedup repeated installations (avoid repeated downloads of huge tool images),
-the images may be --initially-- stored permanently in local folder/share, beyond a environment variable
+the images may be --initially-- stored permanently in local folder/share, beyond an environment variable
 **MYDOWNLOADS**.
 
 To do so:
