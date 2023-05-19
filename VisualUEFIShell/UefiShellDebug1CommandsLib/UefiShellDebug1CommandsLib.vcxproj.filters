@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Comp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Dblk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Dmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\DmpStore.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditInputBar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditMenuBar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditStatusBar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditTitleBar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EfiCompress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EfiDecompress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\LoadPciRom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\MemMap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Mm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Pci.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SerMode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SetSize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SetVar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\UefiShellDebug1CommandsLib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\Edit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\FileBuffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\MainTextEditor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\Misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\BufferImage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\Clipboard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\DiskImage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\FileImage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\HexEdit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\MainHexEditor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\MemImage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\Misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\EventLogInfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\LibSmbiosView.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\PrintInfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\QueryTable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\SmbiosView.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Library\UefiShellDebug1CommandsLib\UefiShellDebug1CommandsLib\DEBUG\AutoGen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Compress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditInputBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditMenuBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditStatusBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditTitleBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Pci.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\UefiShellDebug1CommandsLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\FileBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\MainTextEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\Misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\TextEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\TextEditorTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\BufferImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\Clipboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\DiskImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\FileImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\HexEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\HexEditorTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\MainHexEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\MemImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\Misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\EventLogInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\LibSmbiosView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\PrintInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\QueryTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\SmbiosView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Library\UefiShellDebug1CommandsLib\UefiShellDebug1CommandsLib\DEBUG\AutoGen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Library\UefiShellDebug1CommandsLib\UefiShellDebug1CommandsLib\DEBUG\UefiShellDebug1CommandsLibStrDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

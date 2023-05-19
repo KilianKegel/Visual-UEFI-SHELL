@@ -49,7 +49,7 @@ if not exist Tools\python-3.10.11 (
     echo EXTRACTING PYTHON ...
     md Tools\python-3.10.11\Lib
     tar -xf %MYDOWNLOADS%\python-3.10.11-embed-win64.zip -C Tools\python-3.10.11
-    tar -xf %MYDOWNLOADS%\Tools\python-3.10.11\python310.zip -C Tools\python-3.10.11\Lib
+    tar -xf Tools\python-3.10.11\python310.zip -C Tools\python-3.10.11\Lib
     ren Tools\python-3.10.11\python310._pth python310.pth
 )
 

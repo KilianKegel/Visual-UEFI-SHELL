@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Library\UefiShellDebug1CommandsLib\UefiShellDebug1CommandsLib\DEBUG\AutoGen.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Comp.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Compress.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Dblk.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Dmem.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\DmpStore.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditInputBar.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditMenuBar.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditStatusBar.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditTitleBar.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\Edit.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\FileBuffer.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\MainTextEditor.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\Misc.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EfiCompress.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EfiDecompress.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\BufferImage.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\Clipboard.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\DiskImage.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\FileImage.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\HexEdit.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\MainHexEditor.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\MemImage.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\Misc.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\LoadPciRom.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\MemMap.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Mm.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Mode.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Pci.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SerMode.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SetSize.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SetVar.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\EventLogInfo.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\LibSmbiosView.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\PrintInfo.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\QueryTable.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\SmbiosView.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\UefiShellDebug1CommandsLib.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Library\UefiShellDebug1CommandsLib\UefiShellDebug1CommandsLib\DEBUG\AutoGen.h" />
+    <ClInclude Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Library\UefiShellDebug1CommandsLib\UefiShellDebug1CommandsLib\DEBUG\UefiShellDebug1CommandsLibStrDefs.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Compress.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditInputBar.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditMenuBar.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditStatusBar.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\EditTitleBar.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\FileBuffer.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\MainTextEditor.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\Misc.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\TextEditor.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\TextEditorTypes.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\BufferImage.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\Clipboard.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\DiskImage.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\FileImage.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\HexEditor.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\HexEditorTypes.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\MainHexEditor.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\MemImage.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\HexEdit\Misc.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\Pci.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\EventLogInfo.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\LibSmbiosView.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\PrintInfo.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\QueryTable.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\SmbiosView\SmbiosView.h" />
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib\UefiShellDebug1CommandsLib.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5f604d76-d6ca-4d76-ab40-8db036d1942f}</ProjectGuid>
+    <RootNamespace>UefiShellDebug1CommandsLib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <Optimization>MinSpace</Optimization>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\EDK2\MdePkg\Library\BaseLib\X64\;$(SolutionDir)..\EDK2\MdePkg\Library\BaseLib\;$(SolutionDir)..\EDK2\MdePkg\;$(SolutionDir)..\EDK2\MdePkg\Include\;$(SolutionDir)..\EDK2\MdePkg\Test\UnitTest\Include\;$(SolutionDir)..\EDK2\MdePkg\Include\X64\;$(SolutionDir)..\EDK2\ShellPkg\Include\;$(SolutionDir)..\EDK2\MdeModulePkg\Include\;$(SolutionDir)..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Library\UefiShellDebug1CommandsLib\UefiShellDebug1CommandsLib\DEBUG;$(SolutionDir)..\EDK2\ShellPkg\Library\UefiShellDebug1CommandsLib</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>AutoGen.h</ForcedIncludeFiles>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

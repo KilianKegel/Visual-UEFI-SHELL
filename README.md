@@ -22,8 +22,6 @@ and is even more out-dated.
 So this is a pretty bad situation for **UEFI SHELL users** (e.g. computer industry's test engineers, BIOS engineers),
 since they have to build **UEFI SHELL** on their own to get an *up-to-date* version.
 
-
-
 ## Goal
 Provide **UEFI SHELL** build process with the complete set of all 
 required build tools for Windows 10/11 machines running the AMD64 instruction set:
@@ -31,9 +29,10 @@ required build tools for Windows 10/11 machines running the AMD64 instruction se
 * **Python 3.10.11** [python-3.10.11-embed-amd64.zip](https://www.python.org/ftp/python/3.10.11/python-3.10.11-embed-amd64.zip)
 * **NASM 2.16.01** [nasm-2.16.01-win64.zip](https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/win64/nasm-2.16.01-win64.zip)
 
-In a future extension setup a true **Visual Studio VS2022** project to build 
+**20230519**<del>In a future extension setup a true **Visual Studio VS2022** project to build
 **UEFI Shell** using native **VS2022**/**MSBUILD** driven translation.
-(Refere to [HowTo-configure-VS2022-to-build-.EFI-executables](https://github.com/KilianKegel/HowTo-configure-VS2022-to-build-.EFI-executables#howto-configure-vs2022-to-build-efi-executables))
+(Refere to [HowTo-configure-VS2022-to-build-.EFI-executables](https://github.com/KilianKegel/HowTo-configure-VS2022-to-build-.EFI-executables#howto-configure-vs2022-to-build-efi-executables)) </del>
+
 
 ## Approach
 The above tool set is automatically downloaded, extracted and setup during **LAUNCH.BAT** project start.
@@ -60,6 +59,9 @@ The Enterprise Windows Driver Kit (Enterprise WDK) is a command-line build envir
 The Enterprise WDK contains the necessary elements to build drivers and basic Win32 driver test applications. Use your favorite code editor to modify source code and project files. Because it is command-line based, the Enterprise WDK does lack some of the features incorporated into Visual Studio, such as an IDE, driver deployment and driver testing.
 
 ## Revision history
+### 20230519
+* add VS2022 GUI support to edit/navigate/postprocess/(partially)build **BOOTX64.EFI**: `**VisualUEFIShell\VisualUEFIShell.sln**`
+  **NOTE:** VS2022 build is based on prior EDK2-build preprocessed `**AutoGen.h**`, `**AutoGen.c**` and `** *StrDefs.h**`.
 ### 20230512
 * fix Visual Studio installation and configuration to run on platforms with VS20XY already installed
 ### 20230507

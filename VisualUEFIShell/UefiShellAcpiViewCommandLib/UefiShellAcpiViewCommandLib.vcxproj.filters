@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Pcct\PcctParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Pptt\PpttParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Madt\MadtParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\AcpiParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\AcpiTableParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\AcpiView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\AcpiViewConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Application\AcpiViewApp\AcpiViewApp\DEBUG\AcpiViewAppStrDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Library\UefiShellAcpiViewCommandLib\UefiShellAcpiViewCommandLib\DEBUG\AutoGen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Library\UefiShellAcpiViewCommandLib\UefiShellAcpiViewCommandLib\DEBUG\UefiShellAcpiViewCommandLibStrDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\UefiShellAcpiViewCommandLib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\AcpiViewConfig.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\AcpiView.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\AcpiTableParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\AcpiParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Library\UefiShellAcpiViewCommandLib\UefiShellAcpiViewCommandLib\DEBUG\AutoGen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Mcfg\McfgParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Pcct\PcctParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Pptt\PpttParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Rsdp\RsdpParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Slit\SlitParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Spcr\SpcrParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Srat\SratParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Ssdt\SsdtParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Xsdt\XsdtParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Aest\AestParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Apmt\ApmtParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Bgrt\BgrtParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Dbg2\Dbg2Parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Dsdt\DsdtParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Erst\ErstParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Facs\FacsParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Fadt\FadtParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Gtdt\GtdtParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Hmat\HmatParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Iort\IortParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Madt\MadtParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
