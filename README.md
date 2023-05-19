@@ -60,8 +60,8 @@ The Enterprise WDK contains the necessary elements to build drivers and basic Wi
 
 ## Revision history
 ### 20230519
-* add VS2022 GUI support to edit/navigate/postprocess/(partially)build **BOOTX64.EFI**: `**VisualUEFIShell\VisualUEFIShell.sln**`
-  **NOTE:** VS2022 build is based on prior EDK2-build preprocessed `**AutoGen.h**`, `**AutoGen.c**` and `** *StrDefs.h**`.
+* add VS2022 GUI support to edit/navigate/postprocess/(partially)build **BOOTX64.EFI**: `VisualUEFIShell\VisualUEFIShell.sln`<br>
+  **NOTE:** VS2022 build is based on prior EDK2-build preprocessed `AutoGen.h`, `AutoGen.c` and `*StrDefs.h`.
 ### 20230512
 * fix Visual Studio installation and configuration to run on platforms with VS20XY already installed
 ### 20230507
