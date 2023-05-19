@@ -1,4 +1,4 @@
-# <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="48" height="48">NON-Visual-UEFI-SHELL
+# <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="48" height="48">EDK2-UEFI-SHELL + Visual-UEFI-SHELL
 Build **UEFI SHELL binary** from latest available [**EDK2**](https://github.com/tianocore/edk2)
 [release tag](https://github.com/tianocore/edk2/tags)
 
