@@ -4,7 +4,8 @@ Build **UEFI SHELL binary** from latest available [**EDK2**](https://github.com/
 
 * [Intention](README.md#intention)<br>
 * [Goal](README.md#goal)<br>
-* [Approach](README.md#approach)<br>
+* [Approach](README.md#approach)<br>* 
+* [Howto](README.md#howto)<br>
 * [Revision history](README.md#revision-history)<br>
 
 
@@ -29,16 +30,15 @@ required build tools for Windows 10/11 machines running the AMD64 instruction se
 * **Python 3.10.11** [python-3.10.11-embed-amd64.zip](https://www.python.org/ftp/python/3.10.11/python-3.10.11-embed-amd64.zip)
 * **NASM 2.16.01** [nasm-2.16.01-win64.zip](https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/win64/nasm-2.16.01-win64.zip)
 
-**20230519**<del>In a future extension setup a true **Visual Studio VS2022** project to build
-**UEFI Shell** using native **VS2022**/**MSBUILD** driven translation.
-(Refere to [HowTo-configure-VS2022-to-build-.EFI-executables](https://github.com/KilianKegel/HowTo-configure-VS2022-to-build-.EFI-executables#howto-configure-vs2022-to-build-efi-executables)) </del>
-
+Additionally provide **Microsoft Visual Studio VS2022** support for that particular **Tianocore EDK2** component `ShellPkg`,
+to enable developers to build, navigate through, explore, modify, extend and easily understand basic concepts of **UEFI SHELL** using **AI-assisted IntelliSense**
+of **VS2022** – a state of the art integrated development environment.
 
 ## Approach
 The above tool set is automatically downloaded, extracted and setup during **LAUNCH.BAT** project start.
 
 To speedup repeated installations (avoid repeated downloads of huge tool images),
-the images may be --initially-- stored permanently in local folder/share, beyond an environment variable
+the images may be –initially– stored permanently in local folder/share, beyond an environment variable
 **MYDOWNLOADS**.
 
 To do so:
@@ -57,6 +57,20 @@ https://learn.microsoft.com/en-us/windows-hardware/drivers/develop/using-the-ent
 The Enterprise Windows Driver Kit (Enterprise WDK) is a command-line build environment that does not require any installation prior to use. Once you have downloaded the EWDK, you can manage it with version control software or you can zip the files and copy as needed. A .zip file created with the Enterprise WDK contains all the necessary compilers, linkers, build tools, headers and libs to build Visual Studio-based driver projects.
 
 The Enterprise WDK contains the necessary elements to build drivers and basic Win32 driver test applications. Use your favorite code editor to modify source code and project files. Because it is command-line based, the Enterprise WDK does lack some of the features incorporated into Visual Studio, such as an IDE, driver deployment and driver testing.
+
+## Howto
+0. download project recursively
+1. run `LAUNCH.BAT` to start the session
+2. run `BUILD` (build.cmd), to run the traditional EDK2 build
+
+to run **VS2022**
+
+3. you need steps 0. .. 2. from above
+4. run `VisualUEFIShell.sln` VS2022 solution<br>
+   NOTE: EDK2 build automatically creates source code files that must already be available for **VS2022** usage
+5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `x64\Release`
+
+
 
 ## Revision history
 ### 20230519
