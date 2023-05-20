@@ -4,7 +4,7 @@ Build **UEFI SHELL binary** from latest available [**EDK2**](https://github.com/
 
 * [Intention](README.md#intention)<br>
 * [Goal](README.md#goal)<br>
-* [Approach](README.md#approach)<br>* 
+* [Approach](README.md#approach)<br> 
 * [Howto](README.md#howto)<br>
 * [Revision history](README.md#revision-history)<br>
 
