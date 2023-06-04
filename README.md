@@ -73,6 +73,8 @@ to run **VS2022**
 
 
 ## Revision history
+### 20230604
+* update to **edk2-stable202305**
 ### 20230519
 * add VS2022 GUI support to edit/navigate/postprocess/(partially)build **BOOTX64.EFI**: `VisualUEFIShell\VisualUEFIShell.sln`<br>
   **NOTE:** VS2022 build is based on prior EDK2-build preprocessed `AutoGen.h`, `AutoGen.c` and `*StrDefs.h`.
@@ -81,5 +83,5 @@ to run **VS2022**
 ### 20230507
 * fix embedded Python installation and configuration to run on platforms without Python previously installed
 ### 20230501
-* edk2-stable202302
+* **edk2-stable202302**
 * initial revision
