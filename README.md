@@ -23,6 +23,9 @@ and is even more out-dated.
 So this is a pretty bad situation for **UEFI SHELL users** (e.g. computer industry's test engineers, BIOS engineers),
 since they have to build **UEFI SHELL** on their own to get an *up-to-date* version.
 
+The latest **Visual UEFI SHELL Binary** can be found here: <br>
+https://github.com/KilianKegel/Visual-UEFI-SHELL/blob/main/VisualUEFIShell/x64/Release/bootX64.efi
+
 ## Goal
 Provide **UEFI SHELL** build process with the complete set of all 
 required build tools for Windows 10/11 machines running the AMD64 instruction set:
@@ -73,6 +76,8 @@ to run **VS2022**
 
 
 ## Revision history
+### 20230708
+* update/facelift **BUILD.CMD** and **README.MD**
 ### 20230604
 * update to **edk2-stable202305**
 ### 20230519
