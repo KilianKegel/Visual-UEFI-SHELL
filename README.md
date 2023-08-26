@@ -77,6 +77,9 @@ to run **VS2022**
 
 
 ## Revision history
+### 20230826
+* update to **edk2-stable202308**
+* keep binaries in the directory **UEFIBinaries**
 ### 20230708
 * update/facelift **BUILD.CMD** and **README.MD**
 ### 20230604

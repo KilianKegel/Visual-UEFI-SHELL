@@ -10,12 +10,12 @@ rem #######################################################################
 rem ### check/create MYDOWNLOADS ##########################################
 rem #######################################################################
 if defined MYDOWNLOADS (
-	rem echo MYDOWNLOADS exist
+    rem echo MYDOWNLOADS exist
 ) else (
-	echo create MYDOWNLOADS locally
-	mkdir MYDOWNLOADS
-	echo set MYDOWNLOADS=%~dp0MYDOWNLOADS
-	set MYDOWNLOADS=%~dp0MYDOWNLOADS
+    echo create MYDOWNLOADS locally
+    mkdir MYDOWNLOADS
+    echo set MYDOWNLOADS=%~dp0MYDOWNLOADS
+    set MYDOWNLOADS=%~dp0MYDOWNLOADS
 )
 
 rem #######################################################################
@@ -26,9 +26,9 @@ if not exist Tools (
 )
 if not exist %MYDOWNLOADS%\wget.exe powershell "& {[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri "https://eternallybored.org/misc/wget/1.21.3/64/wget.exe -OutFile %MYDOWNLOADS%\wget.exe"}"
 if not exist Tools\wget.exe copy %MYDOWNLOADS%\wget.exe Tools\wget.exe
-if not exist %MYDOWNLOADS%\EnterpriseWDK_rs2_release_15063_20170317-1834.zip Tools\wget  --output-document=%MYDOWNLOADS%\EnterpriseWDK_rs2_release_15063_20170317-1834.zip https://go.microsoft.com/fwlink/p/?LinkID=846038
-if not exist %MYDOWNLOADS%\nasm-2.16.01-win64.zip 				Tools\wget  --output-document=%MYDOWNLOADS%\nasm-2.16.01-win64.zip https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/win64/nasm-2.16.01-win64.zip
-if not exist %MYDOWNLOADS%\python-3.10.11-embed-win64.zip		Tools\wget  --output-document=%MYDOWNLOADS%\python-3.10.11-embed-win64.zip https://www.python.org/ftp/python/3.10.11/python-3.10.11-embed-amd64.zip
+if not exist %MYDOWNLOADS%\EnterpriseWDK_rs2_release_15063_20170317-1834.zip Tools\wget --no-check-certificate --output-document=%MYDOWNLOADS%\EnterpriseWDK_rs2_release_15063_20170317-1834.zip https://go.microsoft.com/fwlink/p/?LinkID=846038
+if not exist %MYDOWNLOADS%\nasm-2.16.01-win64.zip               Tools\wget --no-check-certificate --output-document=%MYDOWNLOADS%\nasm-2.16.01-win64.zip https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/win64/nasm-2.16.01-win64.zip
+if not exist %MYDOWNLOADS%\python-3.10.11-embed-win64.zip       Tools\wget --no-check-certificate --output-document=%MYDOWNLOADS%\python-3.10.11-embed-win64.zip https://www.python.org/ftp/python/3.10.11/python-3.10.11-embed-amd64.zip
 
 rem #######################################################################
 rem ### InstallCheck Tools \\\\\\\\\\######################################
@@ -40,9 +40,9 @@ if not exist Tools\EWDK_1703 (
 )
 
 if not exist Tools\nasm-2.16.01 (
-	echo EXTRACTING NASM ...
-	md Tools\nasm-2.16.01
-	tar -xf %MYDOWNLOADS%\nasm-2.16.01-win64.zip -C Tools\
+    echo EXTRACTING NASM ...
+    md Tools\nasm-2.16.01
+    tar -xf %MYDOWNLOADS%\nasm-2.16.01-win64.zip -C Tools\
 )
 
 if not exist Tools\python-3.10.11 (
