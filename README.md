@@ -70,9 +70,9 @@ The Enterprise WDK contains the necessary elements to build drivers and basic Wi
 to run **VS2022**
 
 3. you need steps 0. .. 2. from above
-4. run `VisualUEFIShell.sln` VS2022 solution<br>
-   NOTE: EDK2 build automatically creates source code files that must already be available for **VS2022** usage
-5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `x64\Release`
+4. start `VisualUEFIShell.sln` VS2022 solution from explorer – do *not* start from the above LAUNCHed command line<br>
+   NOTE: EDK2 build automatically creates source code files *that must already be available* for **VS2022** usage
+5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `UEFIBinaries`
 
 
 
