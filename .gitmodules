@@ -1,3 +1,6 @@
 [submodule "EDK2"]
 	path = EDK2
 	url = https://github.com/tianocore/edk2.git
+[submodule "VisualUEFIShell/lib"]
+	path = VisualUEFIShell/lib
+	url = https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI.git

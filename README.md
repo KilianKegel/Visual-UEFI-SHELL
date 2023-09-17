@@ -1,5 +1,5 @@
 ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=KilianKegel.kiliankegel)
-# <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="48" height="48">EDK2-UEFI-SHELL + Visual-UEFI-SHELL
+# <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="48" height="48">EDK2-UEFI-SHELL + Toro-UEFI-SHELL
 Build **UEFI SHELL binary** from latest available [**EDK2**](https://github.com/tianocore/edk2)
 [release tag](https://github.com/tianocore/edk2/tags)
 
@@ -28,6 +28,35 @@ The latest **Visual UEFI SHELL Binary** can be found here: <br>
 https://github.com/KilianKegel/Visual-UEFI-SHELL/blob/main/VisualUEFIShell/x64/Release/bootX64.efi
 
 ## Goal
+Introduce **♉toro UEFI SHELL**, an improved *original* **Tianocore UEFI SHELL** for engineers usage and development requirements.
+
+### Development improvements:
+* provide original **Visual Studio VS2022** tool chain for **Tianocore UEFI SHELL** 
+	* speedup build time
+	* [modern development experience](https://developer.ibm.com/blogs/the-modern-developer-experience/)
+	* complete **Visual Studio** look and feel
+* add **ANSI-C-API** ([**toro C Library** source code](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/tree/498701ffff5c49492537f4ee16fe227d7e0fe0a8#torosrc)) as an additional standardized application		
+  programming interface (API) for internal usage.
+* based ond the above statement, create internally a **PLUGIN-mechanism**
+  to easily insert .EFI-binaries directly into **UEFI SHELL** as additional shell commands:<br>
+  * `diskpart` original binary from [Intel UEFI Shell Disk Utilities](https://www.intel.com/content/www/us/en/download/714351/uefi-shell-disk-utilities.html)
+  * `acpibin`, `acpidump`, `aslcompiler` original binary from [ACPICA (ACPI component architecture) port to UEFI](https://github.com/tianocore/edk2-staging/tree/CdePkg/blogs/2022-01-16#introduction-of-the-acpica-port-to-uefi) at Tianocore.
+  * `find`, `more` MSDOS clones  from [Visual-MSDOS-Tools-for-UEFI-Shell](https://github.com/KilianKegel/Visual-MSDOS-Tools-for-UEFI-Shell#visual-msdos-tools-for-uefi-shell)
+  * `rtcdmp` RTC dump, and `siodmp` universal SuperIO dump.
+	* just invoke `help` in the command line
+
+*This enables developers to speed up their **UEFI SHELL**-development tasks by factor x10 or more*
+
+### Usage improvements:
+* add conventional MSDOS-style drive names **A:**, **B:**, **C:**, ...
+* introduce `\EFI\BOOT\BOOTX64.INI` configuration file
+* initially at boot switch to predefined screen resolution
+* remove annoying **UEFI SHELL** count down at start
+* provide key **F5** while *Starting UEFI Operating System ...* to skip `STARTUP.NSH`
+
+![screnshot](https://github.com/KilianKegel/pictures/blob/master/torouefishell.png)
+
+## Approach
 Provide **UEFI SHELL** build process with the complete set of all 
 required build tools for Windows 10/11 machines running the AMD64 instruction set:
 * **Microsoft EWDK 1703** [EnterpriseWDK_rs2_release_15063_20170317-1834.zip](https://go.microsoft.com/fwlink/p/?LinkID=846038)
@@ -38,7 +67,6 @@ Additionally provide **Microsoft Visual Studio VS2022** support for that particu
 to enable developers to build, navigate through, explore, modify, extend and easily understand basic concepts of **UEFI SHELL** using **AI-assisted IntelliSense**
 of **VS2022** – a state of the art integrated development environment.
 
-## Approach
 The above tool set is automatically downloaded, extracted and setup during **LAUNCH.BAT** project start.
 
 To speedup repeated installations (avoid repeated downloads of huge tool images),
@@ -77,6 +105,9 @@ to run **VS2022**
 
 
 ## Revision history
+### 20230917
+* introduce **toro UEFI SHELL**, *ALPHA RELEASE*
+* update to **TORO C Library 20230916**
 ### 20230826
 * update to **edk2-stable202308**
 * keep binaries in the directory **UEFIBinaries**

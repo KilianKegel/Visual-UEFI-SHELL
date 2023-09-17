@@ -114,10 +114,16 @@ popd
 
 
 set path=%~dp0;%path%
-echo ##############################################################
-echo ### enter "BUILD" to build the shell                       ###
+echo ##################################################################################
+echo ###                                                                            ###
+echo ### enter "BUILD" to build the original tianocore shell                        ###
+echo ###                                                                            ###
+echo ###     NOTE: This step is also initially required to run Visual-UEFI-SHELL    ###
+echo ###           build.                                                           ###
+echo ###                                                                            ###
 echo ### enter "rd /s /q build" to clean previous build         ###
-echo ##############################################################
+echo ###                                                                            ###
+echo ##################################################################################
 
 rem #######################################################################
 rem ### start cmd.exe #####################################################

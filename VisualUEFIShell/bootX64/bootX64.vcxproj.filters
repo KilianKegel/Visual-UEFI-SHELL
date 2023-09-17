@@ -24,9 +24,6 @@
     <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\FileHandleWrappers.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\Shell.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\ShellEnvVar.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -36,10 +33,19 @@
     <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\ShellParametersProtocol.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\ShellProtocol.c">
+    <ClCompile Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Application\Shell\EA4BB293-2D7F-4456-A681-1F22F42CD0BC\DEBUG\AutoGen.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Application\Shell\EA4BB293-2D7F-4456-A681-1F22F42CD0BC\DEBUG\AutoGen.c">
+    <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\Shell.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shell.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellProtocol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\ShellProtocol.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

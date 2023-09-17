@@ -18,6 +18,9 @@
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellCommandLib\ConsistMapping.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UefiShellCommandLib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellCommandLib\UefiShellCommandLib.c">
       <Filter>Source Files</Filter>
     </ClCompile>

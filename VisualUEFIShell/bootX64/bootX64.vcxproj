@@ -74,6 +74,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.efi</TargetExt>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -121,9 +122,9 @@
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);CDEDBG=STDDBG</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\EDK2\MdePkg\Library\BaseLib\X64\;$(SolutionDir)..\EDK2\MdePkg\Library\BaseLib\;$(SolutionDir)..\EDK2\MdePkg\;$(SolutionDir)..\EDK2\MdePkg\Include\;$(SolutionDir)..\EDK2\MdePkg\Test\UnitTest\Include\;$(SolutionDir)..\EDK2\MdePkg\Include\X64\;$(SolutionDir)..\EDK2\ShellPkg\Include\;$(SolutionDir)..\EDK2\MdeModulePkg\Include\;$(SolutionDir)..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Application\Shell\EA4BB293-2D7F-4456-A681-1F22F42CD0BC\DEBUG</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\EDK2\MdePkg\Library\BaseLib\X64\;$(SolutionDir)..\EDK2\MdePkg\Library\BaseLib\;$(SolutionDir)..\EDK2\MdePkg\;$(SolutionDir)..\EDK2\MdePkg\Include\;$(SolutionDir)..\EDK2\MdePkg\Test\UnitTest\Include\;$(SolutionDir)..\EDK2\MdePkg\Include\X64\;$(SolutionDir)..\EDK2\ShellPkg\Include\;$(SolutionDir)..\EDK2\MdeModulePkg\Include\;$(SolutionDir)..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Application\Shell\EA4BB293-2D7F-4456-A681-1F22F42CD0BC\DEBUG;$(SolutionDir)include\;$(SolutionDir)lib\CdePkg\Include</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>AutoGen.h</ForcedIncludeFiles>
       <DebugInformationFormat>None</DebugInformationFormat>
       <Optimization>MinSpace</Optimization>
@@ -131,6 +132,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+      <UseFullPaths>false</UseFullPaths>
     </ClCompile>
     <Link>
       <SubSystem>EFI Application</SubSystem>
@@ -138,10 +140,10 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
-      <EntryPointSymbol>_ModuleEntryPoint</EntryPointSymbol>
+      <EntryPointSymbol>_cdeCRT0UefiShellDrvEDK</EntryPointSymbol>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>false</DataExecutionPrevention>
-      <AdditionalDependencies>BaseLib.lib;UefiApplicationEntryPoint.lib;BaseDebugLibNull.lib;UefiBootServicesTableLib.lib;DevicePathLib.lib;UefiRuntimeServicesTableLib.lib;UefiLib.lib;UefiHiiServicesLib.lib;DxeHobLib.lib;DxeServicesTableLib.lib;UefiShellLib.lib;UefiHandleParsingLib.lib;UefiShellCommandLib.lib;UefiShellLevel2CommandsLib.lib;UefiShellLevel1CommandsLib.lib;UefiShellLevel3CommandsLib.lib;UefiShellDriver1CommandsLib.lib;UefiShellInstall1CommandsLib.lib;UefiShellDebug1CommandsLib.lib;UefiShellNetwork1CommandsLib.lib;UefiShellNetwork2CommandsLib.lib;UefiShellAcpiViewCommandLib.lib;BaseMemoryLib.lib;UefiMemoryAllocationLib.lib;BasePrintLib.lib;UefiFileHandleLib.lib;UefiHiiLib.lib;UefiSortLib.lib;BasePeCoffGetEntryPointLib.lib;BaseOrderedCollectionRedBlackTreeLib.lib;UefiShellBcfgCommandLib.lib;BaseIoLibIntrinsic.lib;DxeNetLib.lib;UefiBootManagerLib.lib;FilterLibNull.lib;DxeServicesLib.lib;BaseReportStatusCodeLibNull.lib;BasePerformanceLibNull.lib;VariablePolicyHelperLib.lib</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)lib\toroC64.lib;BaseLib.lib;UefiApplicationEntryPoint.lib;BaseDebugLibNull.lib;UefiBootServicesTableLib.lib;DevicePathLib.lib;UefiRuntimeServicesTableLib.lib;UefiLib.lib;UefiHiiServicesLib.lib;DxeHobLib.lib;DxeServicesTableLib.lib;UefiShellLib.lib;UefiHandleParsingLib.lib;UefiShellCommandLib.lib;UefiShellLevel2CommandsLib.lib;UefiShellLevel1CommandsLib.lib;UefiShellLevel3CommandsLib.lib;UefiShellDriver1CommandsLib.lib;UefiShellInstall1CommandsLib.lib;UefiShellDebug1CommandsLib.lib;UefiShellNetwork1CommandsLib.lib;UefiShellNetwork2CommandsLib.lib;UefiShellAcpiViewCommandLib.lib;BaseMemoryLib.lib;UefiMemoryAllocationLib.lib;BasePrintLib.lib;UefiFileHandleLib.lib;UefiHiiLib.lib;UefiSortLib.lib;BasePeCoffGetEntryPointLib.lib;BaseOrderedCollectionRedBlackTreeLib.lib;UefiShellBcfgCommandLib.lib;BaseIoLibIntrinsic.lib;DxeNetLib.lib;UefiBootManagerLib.lib;FilterLibNull.lib;DxeServicesLib.lib;BaseReportStatusCodeLibNull.lib;BasePerformanceLibNull.lib;VariablePolicyHelperLib.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
       <GenerateMapFile>true</GenerateMapFile>
     </Link>
@@ -149,17 +151,46 @@
       <Command>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(SolutionDir)..\UEFIBinaries\visualUEFIShell\BOOTX64.EFI</Command>
       <Message>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(SolutionDir)..\UEFIBinaries\visualUEFIShell\BOOTX64.EFI</Message>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(OutDir)bin2hex.exe /out:$(SolutionDir)bootx64\plugins.h $(SolutionDir)bin2hex\find.efi $(SolutionDir)bin2hex\more.efi $(SolutionDir)bin2hex\rtcdmp.efi $(SolutionDir)bin2hex\siodmp.efi $(SolutionDir)bin2hex\diskpart.efi $(SolutionDir)bin2hex\acpibin.efi $(SolutionDir)bin2hex\acpidump.efi $(SolutionDir)bin2hex\aslcompiler.efi</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>$(OutDir)bin2hex.exe /out:$(SolutionDir)bootx64\plugins.h $(SolutionDir)bin2hex\find.efi $(SolutionDir)bin2hex\more.efi $(SolutionDir)bin2hex\rtcdmp.efi $(SolutionDir)bin2hex\siodmp.efi $(SolutionDir)bin2hex\diskpart.efi $(SolutionDir)bin2hex\acpibin.efi $(SolutionDir)bin2hex\acpidump.efi $(SolutionDir)bin2hex\aslcompiler.efi</Message>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Application\Shell\EA4BB293-2D7F-4456-A681-1F22F42CD0BC\DEBUG\AutoGen.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\ConsoleLogger.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\ConsoleWrappers.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\FileHandleWrappers.c" />
-    <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\Shell.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\Shell.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\ShellEnvVar.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\ShellManParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\ShellParametersProtocol.c" />
-    <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\ShellProtocol.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Application\Shell\ShellProtocol.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="Shell.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\EDK2\ShellPkg\Application\Shell;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UefiMain=UefiMainCDEHOOKED;_NO_CRT_STDIO_INLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="ShellProtocol.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\EDK2\ShellPkg\Application\Shell;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Application\Shell\EA4BB293-2D7F-4456-A681-1F22F42CD0BC\DEBUG\AutoGen.h" />

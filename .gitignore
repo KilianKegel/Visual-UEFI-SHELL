@@ -10,3 +10,8 @@ Tools/EWDK_1703
 hello.obj
 hello.exe
 /VisualUEFIShell/.vs
+*.obj
+*.tlog
+x64/
+.vs/
+$trash/
