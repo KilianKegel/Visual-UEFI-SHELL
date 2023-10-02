@@ -25,7 +25,7 @@ So this is a pretty bad situation for **UEFI SHELL users** (e.g. computer indust
 since they have to build **UEFI SHELL** on their own to get an *up-to-date* version.
 
 The latest **Visual UEFI SHELL Binary** can be found here: <br>
-https://github.com/KilianKegel/Visual-UEFI-SHELL/blob/main/VisualUEFIShell/x64/Release/bootX64.efi
+https://github.com/KilianKegel/Visual-UEFI-SHELL/tree/main/UEFIBinaries
 
 ## Goal
 Introduce **♉toro UEFI SHELL**, an improved *original* **Tianocore UEFI SHELL** for engineers usage and development requirements.
