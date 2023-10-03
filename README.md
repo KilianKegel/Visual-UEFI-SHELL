@@ -4,6 +4,7 @@ Build **UEFI SHELL binary** from latest available [**EDK2**](https://github.com/
 [release tag](https://github.com/tianocore/edk2/tags)
 
 * [Intention](README.md#intention)<br>
+  * [Download](https://github.com/KilianKegel/Visual-UEFI-SHELL/tree/main/UEFIBinaries)<br>
 * [Goal](README.md#goal)<br>
 * [Approach](README.md#approach)<br> 
 * [Howto](README.md#howto)<br>
