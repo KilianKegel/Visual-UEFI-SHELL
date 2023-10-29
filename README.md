@@ -1,6 +1,11 @@
 ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=KilianKegel.kiliankegel)
 # <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="48" height="48">EDK2-UEFI-SHELL + Toro-UEFI-SHELL
 Build **UEFI SHELL binary** from latest available [**EDK2**](https://github.com/tianocore/edk2)
+
+![screnshot](https://github.com/KilianKegel/pictures/blob/master/torouefishell.png)
+
+https://www.youtube.com/watch?v=wXTQ_wsKwHw
+
 [release tag](https://github.com/tianocore/edk2/tags)
 
 * [Intention](README.md#intention)<br>
@@ -54,11 +59,6 @@ Introduce **♉toro UEFI SHELL**, an improved *original* **Tianocore UEFI SHELL*
 * initially at boot switch to predefined screen resolution
 * remove annoying **UEFI SHELL** count down at start
 * provide key **F5** while *Starting UEFI Operating System ...* to skip `STARTUP.NSH`
-
-![screnshot](https://github.com/KilianKegel/pictures/blob/master/torouefishell.png)
-
-https://www.youtube.com/watch?v=wXTQ_wsKwHw
-
 ## Approach
 Provide **UEFI SHELL** build process with the complete set of all 
 required build tools for Windows 10/11 machines running the AMD64 instruction set:
