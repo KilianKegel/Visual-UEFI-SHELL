@@ -10,7 +10,7 @@
 **/
 
 #include "Shell.h"
-//#define NCDETRACE/* REMOVE TO ENABLE TRACES */
+#define NCDETRACE/* REMOVE TO ENABLE TRACES */
 #define _CRT_SECURE_NO_WARNINGS
 #define _NO_CRT_STDIO_INLINE
 extern char* _strefierror(EFI_STATUS);

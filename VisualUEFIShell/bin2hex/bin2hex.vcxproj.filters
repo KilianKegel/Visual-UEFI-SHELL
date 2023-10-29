@@ -32,5 +32,6 @@
     <None Include="rtcdmp.efi" />
     <None Include="siodmp.efi" />
     <None Include="diskpart.efi" />
+    <None Include="PCIVIEW.efi" />
   </ItemGroup>
 </Project>

@@ -152,10 +152,10 @@
       <Message>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(SolutionDir)..\UEFIBinaries\visualUEFIShell\BOOTX64.EFI</Message>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>$(OutDir)bin2hex.exe /out:$(SolutionDir)bootx64\plugins.h $(SolutionDir)bin2hex\find.efi $(SolutionDir)bin2hex\more.efi $(SolutionDir)bin2hex\rtcdmp.efi $(SolutionDir)bin2hex\siodmp.efi $(SolutionDir)bin2hex\diskpart.efi $(SolutionDir)bin2hex\acpibin.efi $(SolutionDir)bin2hex\acpidump.efi $(SolutionDir)bin2hex\aslcompiler.efi</Command>
+      <Command>$(OutDir)bin2hex.exe /out:$(SolutionDir)bootx64\plugins.h $(SolutionDir)bin2hex\find.efi $(SolutionDir)bin2hex\more.efi $(SolutionDir)bin2hex\rtcdmp.efi $(SolutionDir)bin2hex\siodmp.efi $(SolutionDir)bin2hex\diskpart.efi $(SolutionDir)bin2hex\acpibin.efi $(SolutionDir)bin2hex\acpidump.efi $(SolutionDir)bin2hex\aslcompiler.efi $(SolutionDir)bin2hex\pciview.efi</Command>
     </PreBuildEvent>
     <PreBuildEvent>
-      <Message>$(OutDir)bin2hex.exe /out:$(SolutionDir)bootx64\plugins.h $(SolutionDir)bin2hex\find.efi $(SolutionDir)bin2hex\more.efi $(SolutionDir)bin2hex\rtcdmp.efi $(SolutionDir)bin2hex\siodmp.efi $(SolutionDir)bin2hex\diskpart.efi $(SolutionDir)bin2hex\acpibin.efi $(SolutionDir)bin2hex\acpidump.efi $(SolutionDir)bin2hex\aslcompiler.efi</Message>
+      <Message>$(OutDir)bin2hex.exe /out:$(SolutionDir)bootx64\plugins.h $(SolutionDir)bin2hex\find.efi $(SolutionDir)bin2hex\more.efi $(SolutionDir)bin2hex\rtcdmp.efi $(SolutionDir)bin2hex\siodmp.efi $(SolutionDir)bin2hex\diskpart.efi $(SolutionDir)bin2hex\acpibin.efi $(SolutionDir)bin2hex\acpidump.efi $(SolutionDir)bin2hex\aslcompiler.efi $(SolutionDir)bin2hex\pciview.efi</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

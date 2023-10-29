@@ -57,6 +57,8 @@ Introduce **♉toro UEFI SHELL**, an improved *original* **Tianocore UEFI SHELL*
 
 ![screnshot](https://github.com/KilianKegel/pictures/blob/master/torouefishell.png)
 
+https://www.youtube.com/watch?v=wXTQ_wsKwHw
+
 ## Approach
 Provide **UEFI SHELL** build process with the complete set of all 
 required build tools for Windows 10/11 machines running the AMD64 instruction set:
@@ -103,11 +105,14 @@ to run **VS2022**
    NOTE: EDK2 build automatically creates source code files *that must already be available* for **VS2022** usage
 5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `UEFIBinaries`
 
-
-
 ## Revision history
+### 20231029
+* add plugins: 
+	* **PCIView**
+	* **DiskPart** from https://www.intel.com/content/www/us/en/download/714351/uefi-shell-disk-utilities.html
+	* **AslCompiler**, **AslDump** from https://github.com/tianocore/edk2-staging/tree/CdePkg/blogs/2022-01-16#introduction-of-the-acpica-port-to-uefi
 ### 20230917
-* introduce **toro UEFI SHELL**, *ALPHA RELEASE*
+* introduce **toro UEFI SHELL**, *ALPHA*
 * update to **TORO C Library 20230916**
 ### 20230826
 * update to **edk2-stable202308**

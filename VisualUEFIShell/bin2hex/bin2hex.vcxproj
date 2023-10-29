@@ -140,6 +140,7 @@
     <None Include="diskpart.efi" />
     <None Include="find.efi" />
     <None Include="more.efi" />
+    <None Include="PCIVIEW.efi" />
     <None Include="rtcdmp.efi" />
     <None Include="siodmp.efi" />
   </ItemGroup>

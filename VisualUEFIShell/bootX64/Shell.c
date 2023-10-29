@@ -9,7 +9,7 @@
 **/
 #define _CRT_SECURE_NO_WARNINGS
 #include "Shell.h"
-//#define NCDETRACE/* REMOVE TO ENABLE TRACES */
+#define NCDETRACE/* REMOVE TO ENABLE TRACES */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -25,6 +25,9 @@
 #include <Protocol\DevicePathUtilities.h>
 #include <Protocol\LoadedImage.h>
 #include <Protocol\SimpleFileSystem.h>
+
+EFI_HANDLE        gImageHandle;
+EFI_SYSTEM_TABLE* gSystemTable;
 
 extern char* _strefierror(EFI_STATUS);
 char*  _gPLUGINSTART;                           // .COFF plugin address im memory
@@ -2759,13 +2762,18 @@ RunCommandOrFile (
             //
             if (1)
             {
+                wchar_t wcsCmdName[48];
                 char fIsPlugin = 0;
                 int i;
+                static EFI_GUID guidSTOP = EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL_GUID;
+                EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL* pSTOP;
+                size_t row = 0, col = 0, CurrentModeNumber;
+
+                gSystemTable->BootServices->LocateProtocol(&guidSTOP, NULL, (void**)&pSTOP);
+                CurrentModeNumber = pSTOP->Mode->Mode;
 
                 for (i = 0; i < sizeof(plugin) / sizeof(plugin[0]); i++)
                 {
-                    wchar_t wcsCmdName[48];
-
                     memset(wcsCmdName, 0, sizeof(wcsCmdName));
 
                     swscanf(CmdLine, L"%s", &wcsCmdName);
@@ -2884,6 +2892,9 @@ RunCommandOrFile (
                 );
 
                 SHELL_FREE_NON_NULL(DevPath);
+
+                if(0 == _wcsnicmp(wcsCmdName, L"pciview", wcslen(L"pciview")))
+                    pSTOP->SetMode(pSTOP, CurrentModeNumber);
 
             }
 
@@ -3626,6 +3637,9 @@ int main(int argc, char** argv)
     EFI_GRAPHICS_OUTPUT_PROTOCOL* pGOP;
     size_t NumSTIPEx,n,row = 0,col = 0;
     EFI_HANDLE* pphndSTIPEx = NULL;
+
+    gImageHandle = (void*)argv[-2];
+    gSystemTable = (void*)argv[-1];
 
     Status = SystemTable->BootServices->LocateProtocol(&guidGOP, NULL, (void**)&pGOP);
     Status = SystemTable->BootServices->LocateProtocol(&guidSTOP, NULL, (void**)&pSTOP);
