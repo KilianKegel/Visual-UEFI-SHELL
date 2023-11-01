@@ -1,12 +1,10 @@
 ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=KilianKegel.kiliankegel)
 # <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="48" height="48">EDK2-UEFI-SHELL + Toro-UEFI-SHELL
-Build **UEFI SHELL binary** from latest available [**EDK2**](https://github.com/tianocore/edk2)
+Build **UEFI SHELL binary** from latest available [**EDK2**](https://github.com/tianocore/edk2) [release tag](https://github.com/tianocore/edk2/tags)
 
 ![screnshot](https://github.com/KilianKegel/pictures/blob/master/torouefishell.png)
 
-https://www.youtube.com/watch?v=wXTQ_wsKwHw
-
-[release tag](https://github.com/tianocore/edk2/tags)
+VIDEO: https://www.youtube.com/watch?v=wXTQ_wsKwHw
 
 * [Intention](README.md#intention)<br>
   * [Download](https://github.com/KilianKegel/Visual-UEFI-SHELL/tree/main/UEFIBinaries)<br>
