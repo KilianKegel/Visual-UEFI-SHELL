@@ -104,6 +104,9 @@ to run **VS2022**
 5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `UEFIBinaries`
 
 ## Revision history
+### 20231119
+* update to **TORO C Library 20231118**
+    * add ACPI timer based synchronization
 ### 20231029
 * add plugins: 
 	* **PCIView**

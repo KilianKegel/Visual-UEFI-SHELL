@@ -121,7 +121,7 @@ echo ###                                                                        
 echo ###     NOTE: This step is also initially required to run Visual-UEFI-SHELL    ###
 echo ###           build.                                                           ###
 echo ###                                                                            ###
-echo ### enter "rd /s /q build" to clean previous build         ###
+echo ### enter "rd /s /q build" to clean previous build                             ###
 echo ###                                                                            ###
 echo ##################################################################################
 

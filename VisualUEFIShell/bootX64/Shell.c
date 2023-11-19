@@ -12,6 +12,7 @@
 #define NCDETRACE/* REMOVE TO ENABLE TRACES */
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <string.h>
 #include <time.h>
 #include <wchar.h>
@@ -25,6 +26,17 @@
 #include <Protocol\DevicePathUtilities.h>
 #include <Protocol\LoadedImage.h>
 #include <Protocol\SimpleFileSystem.h>
+
+#include <Guid\Acpi.h>
+#include <Protocol\AcpiSystemDescriptionTable.h>
+#include <Protocol\AcpiTable.h>
+#include <Guid\Acpi.h>
+#include <IndustryStandard/Acpi62.h>
+#include <IndustryStandard/MemoryMappedConfigurationSpaceAccessTable.h>
+
+#include <Protocol\AcpiSystemDescriptionTable.h>
+
+extern UINT64 _osifUefiShellGetTscPerSec(IN void* pCdeAppIf, unsigned short AcpiPmTmrBase);//kgtest
 
 EFI_HANDLE        gImageHandle;
 EFI_SYSTEM_TABLE* gSystemTable;
@@ -3771,7 +3783,7 @@ int main(int argc, char** argv)
         pSTOP->SetAttribute(pSTOP, EFI_BACKGROUND_BLACK + EFI_WHITE);
         pSTOP->ClearScreen(pSTOP);
 
-        printf("Starting UEFI Operating System ...\n");
+        printf("Press F5 to skip STARTUP.NSH\nStarting UEFI Operating System");
 
     // SystemTable->ConOut->QueryMode(SystemTable->ConOut,)
     // https://github.com/KilianKegel/toro-C-Library#implementation-status
@@ -3780,6 +3792,7 @@ int main(int argc, char** argv)
         while (fNOT_F5Key && fNOT_F8Key && fNOT_ANYKey && clk > clock())
         {
             if (clkdot < clock())
+                printf("."),
                 countdown--,
                 clkdot += (1 * CLOCKS_PER_SEC / 3);
 
