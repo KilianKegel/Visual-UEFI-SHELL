@@ -42,6 +42,7 @@ EFI_HANDLE        gImageHandle;
 EFI_SYSTEM_TABLE* gSystemTable;
 
 extern char* _strefierror(EFI_STATUS);
+char _gfDEFAULT_UEFI_DRIVE_NAMING = 0;          // 1 -> FS0:..., 0 -> A:...
 char*  _gPLUGINSTART;                           // .COFF plugin address im memory
 size_t _gPLUGINSIZE;                            // .COFF plugin size
 static char fSkipSTARTUPNSH = 0;                // preliminary: if F8 is pressed, STARTUP.NSH is skipped
@@ -717,7 +718,7 @@ UefiMain (
                   
                   if (NULL == fp) {
                       fp = fopen("\\EFI\\BOOT\\bootx64.ini", "w");
-                      fprintf(fp, "#\n# remove comment to enable low res video mode\n#\n#textresolution 80 25");
+                      fprintf(fp, "#\n# remove comment to enable low res video mode\n#\n#TEXTRESOLUTION 80 25\n#DEFAULT_UEFI_DRIVE_NAMING");
                       fclose(fp);
                   }
               }
@@ -2716,7 +2717,7 @@ RunCommandOrFile (
           }
           if (0 == _wcsicmp(CmdLine, L"ver"))
           {
-              printf("\n    TORO UEFI SHELL with PLUGIN Extension\n    Based on \"edk2-stable202308\"\n\n");
+              printf("\n    TORO UEFI SHELL with PLUGIN Extension\n    Based on \"edk2-stable202311\"\n\n");
           }
       }
       break;
@@ -3204,7 +3205,7 @@ RunScriptFileHandle (
   ASSERT (!ShellCommandGetScriptExit ());
 
   PreScriptEchoState = ShellCommandGetEchoState ();
-  PrintBuffSize      = PcdGet16 (PcdShellPrintBufferSize);
+  PrintBuffSize      = PcdGet32 (PcdShellPrintBufferSize);
 
   NewScriptFile = (SCRIPT_FILE *)AllocateZeroPool (sizeof (SCRIPT_FILE));
   if (NewScriptFile == NULL) {
@@ -3725,11 +3726,18 @@ int main(int argc, char** argv)
             //
             // textresolution
             //
-            if (0 == _stricmp(buf0, "textresolution"))
+            if (0 == _stricmp(buf0, "TEXTRESOLUTION"))
                 sscanf(buf1, "%lld", &col),
                 sscanf(buf2, "%lld", &row),
                 swprintf(wcsSetScreenResolutionByMode, 20, L"MODE %zd %zd", col /*= 100 */, row /*= 31*/);
             //printf("--> textres %lld %lld\n", col, row);
+            
+            //
+            // drive naming A:, B:, C: or DEFAULT_UEFI_DRIVE_NAMING FS0:, FS1 ...
+            //
+            if (0 == _stricmp(buf0, "DEFAULT_UEFI_DRIVE_NAMING"))
+                _gfDEFAULT_UEFI_DRIVE_NAMING = 1;
+                
             pStr = strtok(NULL, "\n");
         }
     

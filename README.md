@@ -104,6 +104,9 @@ to run **VS2022**
 5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `UEFIBinaries`
 
 ## Revision history
+### 20231201
+* update to [**edk2-stable202311**](https://github.com/tianocore/edk2/releases/tag/edk2-stable202311)
+* add `DEFAULT_UEFI_DRIVE_NAMING` switch to **BOOTX64.INI**, to enable UEFI default drive naming **FS0:**, **FS1:**, **FS2:** ...
 ### 20231119
 * update to **TORO C Library 20231118**
     * add ACPI timer based synchronization
@@ -116,12 +119,12 @@ to run **VS2022**
 * introduce **toro UEFI SHELL**, *ALPHA*
 * update to **TORO C Library 20230916**
 ### 20230826
-* update to **edk2-stable202308**
+* update to [**edk2-stable202308**](https://github.com/tianocore/edk2/releases/tag/edk2-stable202308)
 * keep binaries in the directory **UEFIBinaries**
 ### 20230708
 * update/facelift **BUILD.CMD** and **README.MD**
 ### 20230604
-* update to **edk2-stable202305**
+* update to [**edk2-stable202305**](https://github.com/tianocore/edk2/releases/tag/edk2-stable202305)
 ### 20230519
 * add VS2022 GUI support to edit/navigate/postprocess/(partially)build **BOOTX64.EFI**: `VisualUEFIShell\VisualUEFIShell.sln`<br>
   **NOTE:** VS2022 build is based on prior EDK2-build preprocessed `AutoGen.h`, `AutoGen.c` and `*StrDefs.h`.
@@ -130,5 +133,5 @@ to run **VS2022**
 ### 20230507
 * fix embedded Python installation and configuration to run on platforms without Python previously installed
 ### 20230501
-* **edk2-stable202302**
+* [**edk2-stable202302**](https://github.com/tianocore/edk2/releases/tag/edk2-stable202302)
 * initial revision

@@ -11,6 +11,8 @@
 
 #include "UefiShellCommandLib.h"
 
+extern char _gfDEFAULT_UEFI_DRIVE_NAMING;
+
 // STATIC local variables
 STATIC SHELL_COMMAND_INTERNAL_LIST_ENTRY  mCommandList;
 STATIC SCRIPT_FILE_LIST                   mScriptList;
@@ -1263,13 +1265,25 @@ ShellCommandCreateNewMappingName (
   String = NULL;
 
   String = AllocateZeroPool (PcdGet8 (PcdShellMapNameLength) * sizeof (String[0]));
-  UnicodeSPrint(
-      String,
-      PcdGet8(PcdShellMapNameLength) * sizeof(String[0]),
-      Type == MappingTypeFileSystem ? L"%c:" : L"BLK%d:",
-      Type == MappingTypeFileSystem ? 'A' + mFsMaxCount++ : mBlkMaxCount++
-  );
 
+  if (1 == _gfDEFAULT_UEFI_DRIVE_NAMING)
+  {
+      UnicodeSPrint(
+          String,
+          PcdGet8(PcdShellMapNameLength) * sizeof(String[0]),
+          Type == MappingTypeFileSystem ? L"FS%d:" : L"BLK%d:",
+          Type == MappingTypeFileSystem ? mFsMaxCount++ : mBlkMaxCount++
+      );
+  }
+  else
+  {
+      UnicodeSPrint(
+          String,
+          PcdGet8(PcdShellMapNameLength) * sizeof(String[0]),
+          Type == MappingTypeFileSystem ? L"%c:" : L"BLK%d:",
+          Type == MappingTypeFileSystem ? 'A' + mFsMaxCount++ : mBlkMaxCount++
+      );
+  }
   return (String);
 }
 
