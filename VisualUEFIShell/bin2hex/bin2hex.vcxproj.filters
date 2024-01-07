@@ -33,5 +33,27 @@
     <None Include="siodmp.efi" />
     <None Include="diskpart.efi" />
     <None Include="PCIVIEW.efi" />
+    <None Include="iodmp8.efi" />
+    <None Include="iodmp16.efi" />
+    <None Include="iodmp32.efi" />
+    <None Include="iowr8.efi" />
+    <None Include="iowr16.efi" />
+    <None Include="iowr32.efi" />
+    <None Include="memdmp8.efi" />
+    <None Include="memdmp16.efi" />
+    <None Include="memdmp32.efi" />
+    <None Include="memdmp64.efi" />
+    <None Include="memwr8.efi" />
+    <None Include="memwr16.efi" />
+    <None Include="memwr32.efi" />
+    <None Include="memwr64.efi" />
+    <None Include="pcidmp8.efi" />
+    <None Include="pcidmp16.efi" />
+    <None Include="pcidmp32.efi" />
+    <None Include="pciwr8.efi" />
+    <None Include="pciwr16.efi" />
+    <None Include="pciwr32.efi" />
+    <None Include="rtcdmp8.efi" />
+    <None Include="rtcwr8.efi" />
   </ItemGroup>
 </Project>

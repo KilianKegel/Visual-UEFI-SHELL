@@ -10,6 +10,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "Shell.h"
 #define NCDETRACE/* REMOVE TO ENABLE TRACES */
+#include "VERSION.h"
+#include "BUILDNUM.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -2717,7 +2719,7 @@ RunCommandOrFile (
           }
           if (0 == _wcsicmp(CmdLine, L"ver"))
           {
-              printf("\n    TORO UEFI SHELL with PLUGIN Extension\n    Based on \"edk2-stable202311\"\n\n");
+              printf("\n    TORO UEFI SHELL with PLUGIN Extension, v%d.%d.%d Build %d\n    Based on \"edk2-stable202311\"\n\n", MAJORVER, MINORVER, PATCHVER, BUILDNUM);
           }
       }
       break;
@@ -2780,7 +2782,7 @@ RunCommandOrFile (
                 int i;
                 static EFI_GUID guidSTOP = EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL_GUID;
                 EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL* pSTOP;
-                size_t row = 0, col = 0, CurrentModeNumber;
+                size_t CurrentModeNumber;
 
                 gSystemTable->BootServices->LocateProtocol(&guidSTOP, NULL, (void**)&pSTOP);
                 CurrentModeNumber = pSTOP->Mode->Mode;
@@ -3791,7 +3793,7 @@ int main(int argc, char** argv)
         pSTOP->SetAttribute(pSTOP, EFI_BACKGROUND_BLACK + EFI_WHITE);
         pSTOP->ClearScreen(pSTOP);
 
-        printf("Press F5 to skip STARTUP.NSH\nStarting UEFI Operating System");
+        printf("Press F5 to skip STARTUP.NSH\nStarting TORO UEFI SHELL v%d.%d.%d Build %d ", MAJORVER, MINORVER, PATCHVER, BUILDNUM);
 
     // SystemTable->ConOut->QueryMode(SystemTable->ConOut,)
     // https://github.com/KilianKegel/toro-C-Library#implementation-status

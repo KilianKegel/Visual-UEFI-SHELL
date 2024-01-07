@@ -103,6 +103,34 @@ to run **VS2022**
 5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `UEFIBinaries`
 
 ## Revision history
+### 20240107 v1.3.0 build 4
+* adding PLUGINS from [my-legacy-toolbox](https://github.com/tianocore/edk2-staging/blob/CdePkg/blogs/2021-11-14/README.md#my-legacy-toolbox) to Shell-internal command set
+	* **PCI dump family**<br>			
+	  * pcidmp32.efi, pcidmp16.efi, pcidmp8.efi<br>
+	  NOTE: **pcidmp32.efi** supports "/ALL" command line switch to dump all PCI devices recursively
+	
+	* **PCI write family**<br>			
+      * pciwr32.efi, pciwr16.efi, pciwr8.efi
+
+	* **MEMory dump family**<br>					
+      * memdmp64.efi, memdmp32.efi, memdmp16.efi, memdmp8.efi
+
+	* **MEMory write family**<br>					
+ 	  * memwr64.efi, memwr32.efi, memwr16.efi, memwr8.efi
+
+	* **I/O dump family**<br>					
+      * iodmp32.efi, iodmp16.efi, iodmp8.efi
+
+	* **I/O write family**<br>					
+      * iowr32.efi, iowr16.efi, iowr8.efi
+
+	* **RTC write**<br>									
+      * rtcwr8.efi
+
+	* **RTC dump**<br>									
+	  * rtcdmp8.efi
+* add version + build enumeration (experimental)
+		* 
 ### 20231201
 * update to [**edk2-stable202311**](https://github.com/tianocore/edk2/releases/tag/edk2-stable202311)
 * add `DEFAULT_UEFI_DRIVE_NAMING` switch to **BOOTX64.INI**, to enable UEFI default drive naming **FS0:**, **FS1:**, **FS2:** ...

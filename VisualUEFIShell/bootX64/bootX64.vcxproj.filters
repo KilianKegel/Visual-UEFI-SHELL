@@ -83,8 +83,20 @@
     <ClInclude Include="..\..\EDK2\Build\Shell\RELEASE_VS2015\X64\ShellPkg\Application\Shell\EA4BB293-2D7F-4456-A681-1F22F42CD0BC\DEBUG\ShellStrDefs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BUILDNUM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VERSION.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\EDK2\ShellPkg\Application\Shell\Shell.uni" />
+    <None Include="BUILDNUM.bat">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
