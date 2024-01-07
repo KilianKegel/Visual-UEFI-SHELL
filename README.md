@@ -130,7 +130,7 @@ to run **VS2022**
 	* **RTC dump**<br>									
 	  * rtcdmp8.efi
 * add version + build enumeration (experimental)
-		* 
+
 ### 20231201
 * update to [**edk2-stable202311**](https://github.com/tianocore/edk2/releases/tag/edk2-stable202311)
 * add `DEFAULT_UEFI_DRIVE_NAMING` switch to **BOOTX64.INI**, to enable UEFI default drive naming **FS0:**, **FS1:**, **FS2:** ...
