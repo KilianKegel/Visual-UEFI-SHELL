@@ -2709,11 +2709,17 @@ RunCommandOrFile (
       {
           if (0 == _wcsicmp(CmdLine, L"help"))
           {
+              char* pstrCommaLF = "    ";
               puts(""); // new line
               // list PLUGINs
-              for (int i = 0; i < sizeof(plugin) / sizeof(plugin[0]); i++)
+              printf("TORO UEFI SHELL PLUGINs:\n");
+              for (int i = 1; i <= sizeof(plugin) / sizeof(plugin[0]); i++)
               {
-                  printf("%-14ls- TORO UEFI SHELL \"PLUGIN\"\n", plugin[i].wcsCmd);
+                  printf("%s%ls", pstrCommaLF,plugin[i - 1].wcsCmd);
+                  if (0 == (i % 8))
+                      pstrCommaLF = "\n    ";
+                  else
+                      pstrCommaLF = ", ";
               }
               puts(""); // new line
           }

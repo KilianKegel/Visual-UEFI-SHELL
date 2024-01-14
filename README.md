@@ -103,6 +103,8 @@ to run **VS2022**
 5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `UEFIBinaries`
 
 ## Revision history
+### 20240114 v1.3.1 build 11
+* rearrange HELP listing for PLUGIN commands, listed below
 ### 20240107 v1.3.0 build 4
 * adding PLUGINS from [my-legacy-toolbox](https://github.com/tianocore/edk2-staging/blob/CdePkg/blogs/2021-11-14/README.md#my-legacy-toolbox) to Shell-internal command set
 	* **PCI dump family**<br>			
