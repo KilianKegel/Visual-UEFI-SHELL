@@ -3954,7 +3954,7 @@ NotificationFunction (
   IN EFI_KEY_DATA  *KeyData
   )
 {
-  if (((KeyData->Key.UnicodeChar == L'c') &&
+  if ((((KeyData->Key.UnicodeChar == L'c') || (KeyData->Key.UnicodeChar == L'C')) &&
        ((KeyData->KeyState.KeyShiftState == (EFI_SHIFT_STATE_VALID|EFI_LEFT_CONTROL_PRESSED)) || (KeyData->KeyState.KeyShiftState  == (EFI_SHIFT_STATE_VALID|EFI_RIGHT_CONTROL_PRESSED)))) ||
       (KeyData->Key.UnicodeChar == 3)
       )
@@ -4056,5 +4056,55 @@ InernalEfiShellStartMonitor (
                          );
   }
 
+  if (1)
+  {
+      static VOID* CtrlCNotifyHandle5; ///< The NotifyHandle returned from SimpleTextInputEx.RegisterKeyNotify.
+      static VOID* CtrlCNotifyHandle6; ///< The NotifyHandle returned from SimpleTextInputEx.RegisterKeyNotify.
+      static VOID* CtrlCNotifyHandle7; ///< The NotifyHandle returned from SimpleTextInputEx.RegisterKeyNotify.
+      static VOID* CtrlCNotifyHandle8; ///< The NotifyHandle returned from SimpleTextInputEx.RegisterKeyNotify.
+
+      KeyData.KeyState.KeyToggleState = 0;
+      KeyData.Key.ScanCode = 0;
+      KeyData.Key.UnicodeChar = L'C';
+
+      KeyData.KeyState.KeyShiftState = EFI_SHIFT_STATE_VALID | EFI_LEFT_CONTROL_PRESSED;
+      Status = SimpleEx->RegisterKeyNotify(
+          SimpleEx,
+          &KeyData,
+          NotificationFunction,
+          &CtrlCNotifyHandle5
+      );
+
+      KeyData.KeyState.KeyShiftState = EFI_SHIFT_STATE_VALID | EFI_RIGHT_CONTROL_PRESSED;
+      if (!EFI_ERROR(Status)) {
+          Status = SimpleEx->RegisterKeyNotify(
+              SimpleEx,
+              &KeyData,
+              NotificationFunction,
+              &CtrlCNotifyHandle6
+          );
+      }
+
+      KeyData.KeyState.KeyShiftState = EFI_SHIFT_STATE_VALID | EFI_LEFT_CONTROL_PRESSED;
+      KeyData.Key.UnicodeChar = 3;
+      if (!EFI_ERROR(Status)) {
+          Status = SimpleEx->RegisterKeyNotify(
+              SimpleEx,
+              &KeyData,
+              NotificationFunction,
+              &CtrlCNotifyHandle7
+          );
+      }
+
+      KeyData.KeyState.KeyShiftState = EFI_SHIFT_STATE_VALID | EFI_RIGHT_CONTROL_PRESSED;
+      if (!EFI_ERROR(Status)) {
+          Status = SimpleEx->RegisterKeyNotify(
+              SimpleEx,
+              &KeyData,
+              NotificationFunction,
+              &CtrlCNotifyHandle8
+          );
+      }
+  }
   return (Status);
 }

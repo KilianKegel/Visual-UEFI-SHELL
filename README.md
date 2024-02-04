@@ -103,6 +103,12 @@ to run **VS2022**
 5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `UEFIBinaries`
 
 ## Revision history
+### 20240204 v1.4.0 build 22
+* [fixed MORE.EFI swallows empty lines](https://github.com/KilianKegel/Visual-MSDOS-Tools-for-UEFI-Shell?tab=readme-ov-file#20240202)
+* improved CTRL-C: CTRL-upcase-C not supported by traditional **TIANOCORE UEFI SHELL** and drives users mad.
+  Now **CTRL-C** *&&* **ctrl-c** breaks.
+* add famous RU.EFI binary as a PLUGIN
+![RUEFISCREENSHOT](https://github.com/KilianKegel/pictures/blob/master/RUEFI.png)
 ### 20240114 v1.3.1 build 11
 * rearrange HELP listing for PLUGIN commands, listed below
 ### 20240107 v1.3.0 build 4
