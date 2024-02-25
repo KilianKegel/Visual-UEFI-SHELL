@@ -9,15 +9,18 @@ set path=%path%;%~dp0\Tools
 rem #######################################################################
 rem ### check/create MYDOWNLOADS ##########################################
 rem #######################################################################
-if defined MYDOWNLOADS (
-    rem echo MYDOWNLOADS exist
-) else (
+if "%MYDOWNLOADS%" == ""    (
     echo create MYDOWNLOADS locally
     mkdir MYDOWNLOADS
     echo set MYDOWNLOADS=%~dp0MYDOWNLOADS
     set MYDOWNLOADS=%~dp0MYDOWNLOADS
-)
+    GOTO CHKTOOLS
+) 
+echo MYDOWNLOADS "%MYDOWNLOADS%" exist 
+if not exist %MYDOWNLOADS% md %MYDOWNLOADS%  
 
+
+:CHKTOOLS
 rem #######################################################################
 rem ### get TOOLS #########################################################
 rem #######################################################################
@@ -94,8 +97,9 @@ if not exist EDK2\Conf\target.txt (
     echo TARGET                = RELEASE>>              EDK2\Conf\target.txt
     echo TARGET_ARCH           = X64>>                  EDK2\Conf\target.txt
     echo TOOL_CHAIN_CONF       = Conf/tools_def.txt>>   EDK2\Conf\target.txt
-    echo TOOL_CHAIN_TAG        = MYTOOLS>>              EDK2\Conf\target.txt
+    echo TOOL_CHAIN_TAG        = VS2015x86>>            EDK2\Conf\target.txt
     echo BUILD_RULE_CONF = Conf/build_rule.txt>>        EDK2\Conf\target.txt
+    echo #MAX_CONCURRENT_THREAD_NUMBER = 1 >>           EDK2\Conf\target.txt
 )
 
 rem ######################################################################

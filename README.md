@@ -103,6 +103,9 @@ to run **VS2022**
 5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `UEFIBinaries`
 
 ## Revision history
+### 20240225 v1.5.0 build 23
+* update to [**edk2-stable202402**](https://github.com/tianocore/edk2/releases/tag/edk2-stable202402)
+* improve portability, auto-download and setup of all required build tools
 ### 20240204 v1.4.0 build 22
 * [fixed MORE.EFI swallows empty lines](https://github.com/KilianKegel/Visual-MSDOS-Tools-for-UEFI-Shell?tab=readme-ov-file#20240202)
 * improved CTRL-C: CTRL-upcase-C not supported by traditional **TIANOCORE UEFI SHELL** and drives users mad.
