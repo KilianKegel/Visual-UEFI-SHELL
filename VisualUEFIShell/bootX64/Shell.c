@@ -2725,7 +2725,7 @@ RunCommandOrFile (
           }
           if (0 == _wcsicmp(CmdLine, L"ver"))
           {
-              printf("\n    TORO UEFI SHELL with PLUGIN Extension, v%d.%d.%d Build %d\n    Based on \"edk2-stable202402\"\n\n", MAJORVER, MINORVER, PATCHVER, BUILDNUM);
+              printf("\n    TORO UEFI SHELL with PLUGIN Extension, v%d.%d.%d Build %d\n    Based on \"edk2-stable202405\"\n\n", MAJORVER, MINORVER, PATCHVER, BUILDNUM);
           }
       }
       break;

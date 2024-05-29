@@ -46,6 +46,7 @@
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Fadt\FadtParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Gtdt\GtdtParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Hmat\HmatParser.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Hpet\HpetParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Iort\IortParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Madt\MadtParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Mcfg\McfgParser.c" />
@@ -56,6 +57,7 @@
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Spcr\SpcrParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Srat\SratParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Ssdt\SsdtParser.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Wsmt\WsmtParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Xsdt\XsdtParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\UefiShellAcpiViewCommandLib.c" />
   </ItemGroup>
