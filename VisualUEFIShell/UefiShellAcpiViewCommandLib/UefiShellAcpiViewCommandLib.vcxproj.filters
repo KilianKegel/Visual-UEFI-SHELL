@@ -134,5 +134,14 @@
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Wsmt\WsmtParser.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Mpam\MpamParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Hest\HestParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Einj\EinjParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

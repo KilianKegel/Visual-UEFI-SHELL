@@ -148,8 +148,8 @@
       <GenerateMapFile>true</GenerateMapFile>
     </Link>
     <PostBuildEvent>
-      <Command>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(SolutionDir)..\UEFIBinaries\visualUEFIShell\BOOTX64.EFI</Command>
-      <Message>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(SolutionDir)..\UEFIBinaries\visualUEFIShell\BOOTX64.EFI</Message>
+      <Command>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(SolutionDir)..\UEFIBinaries\visualUEFIShell\BOOTX64.EFI &amp; IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)EFI\BOOT</Command>
+      <Message>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(SolutionDir)..\UEFIBinaries\visualUEFIShell\BOOTX64.EFI &amp; IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)EFI\BOOT</Message>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>$(OutDir)bin2hex.exe /out:$(SolutionDir)bootx64\plugins.h $(SolutionDir)bin2hex\find.efi $(SolutionDir)bin2hex\more.efi $(SolutionDir)bin2hex\rtcdmp.efi $(SolutionDir)bin2hex\siodmp.efi $(SolutionDir)bin2hex\diskpart.efi $(SolutionDir)bin2hex\acpibin.efi $(SolutionDir)bin2hex\acpidump.efi $(SolutionDir)bin2hex\aslcompiler.efi $(SolutionDir)bin2hex\pciview.efi $(SolutionDir)bin2hex\pcidmp16.efi $(SolutionDir)bin2hex\pcidmp32.efi $(SolutionDir)bin2hex\pcidmp8.efi $(SolutionDir)bin2hex\pciwr16.efi $(SolutionDir)bin2hex\pciwr32.efi $(SolutionDir)bin2hex\pciwr8.efi $(SolutionDir)bin2hex\memdmp16.efi $(SolutionDir)bin2hex\memdmp32.efi $(SolutionDir)bin2hex\memdmp64.efi $(SolutionDir)bin2hex\memdmp8.efi $(SolutionDir)bin2hex\memwr16.efi $(SolutionDir)bin2hex\memwr32.efi $(SolutionDir)bin2hex\memwr64.efi $(SolutionDir)bin2hex\memwr8.efi $(SolutionDir)bin2hex\iodmp16.efi $(SolutionDir)bin2hex\iodmp32.efi $(SolutionDir)bin2hex\iodmp8.efi $(SolutionDir)bin2hex\iowr16.efi $(SolutionDir)bin2hex\iowr32.efi $(SolutionDir)bin2hex\iowr8.efi $(SolutionDir)bin2hex\rtcwr8.efi $(SolutionDir)bin2hex\rtcdmp8.efi $(SolutionDir)bin2hex\ru.efi &amp; BUILDNUM.BAT</Command>
