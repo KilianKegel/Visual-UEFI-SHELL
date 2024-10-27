@@ -103,6 +103,16 @@ to run **VS2022**
 5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `UEFIBinaries`
 
 ## Revision history
+### 20241027 v1.202408.1 build 44
+* update [ACPICA](https://www.intel.com/content/www/us/en/developer/topic-technology/open/acpica/download.html) **v20240927**:
+	* `AslCompiler` 
+	* `AcpiDump`
+	* `AcpiBin`
+	* `AcpiExec`
+	* `AcpiHelp`
+	* `AcpiSrc`
+	* `AcpiXtract` 
+* update to **TORO C Library 20241013, v0.8.7 Build 200**
 ### 20240829 v1.202408.0 build 41
 * update to [**edk2-stable202408**](https://github.com/tianocore/edk2/releases/tag/edk2-stable202408)
 * improve version enumeration: MINORVER is EDK2 stable release date
