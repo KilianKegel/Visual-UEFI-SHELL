@@ -103,6 +103,9 @@ to run **VS2022**
 5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `UEFIBinaries`
 
 ## Revision history
+### 20241109
+* update to **edk2-stable202408.01** since original **edk2-stable202408** became broken,
+  read https://edk2.groups.io/g/devel/topic/109381734#msg120712)
 ### 20241027 v1.202408.1 build 44
 * update [ACPICA](https://www.intel.com/content/www/us/en/developer/topic-technology/open/acpica/download.html) **v20240927**:
 	* `AslCompiler` 
