@@ -149,5 +149,8 @@
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Rasf\RasfParser.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Tpm2\Tpm2Parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

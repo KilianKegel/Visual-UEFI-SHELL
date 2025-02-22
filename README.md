@@ -103,6 +103,9 @@ to run **VS2022**
 5. **VS2022** directly creates a `BOOTX64.EFI` **UEFI SHELL** binary in its output directory `UEFIBinaries`
 
 ## Revision history
+### 20250222 v1.202502.0 build 70
+* update to [**edk2-stable202502**](https://github.com/tianocore/edk2/releases/tag/edk2-stable202502)
+* update to **TORO C Library 20250222, v0.8.9 Build 231**
 ### 20241124 v1.202411.0 build 56
 * update to [**edk2-stable202411**](https://github.com/tianocore/edk2/releases/tag/edk2-stable202411)
 * update to **TORO C Library 20241103, v0.8.8 Build 222**

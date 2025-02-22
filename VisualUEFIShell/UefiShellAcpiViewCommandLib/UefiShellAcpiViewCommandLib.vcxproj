@@ -62,6 +62,7 @@
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Spcr\SpcrParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Srat\SratParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Ssdt\SsdtParser.c" />
+    <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Tpm2\Tpm2Parser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Wsmt\WsmtParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\Parsers\Xsdt\XsdtParser.c" />
     <ClCompile Include="..\..\EDK2\ShellPkg\Library\UefiShellAcpiViewCommandLib\UefiShellAcpiViewCommandLib.c" />
